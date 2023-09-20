@@ -1,0 +1,2 @@
+class SellerUser < User
+end

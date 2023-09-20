@@ -1,0 +1,2 @@
+class BuyerUser < User
+end
