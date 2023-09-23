@@ -11,6 +11,17 @@
   </head>
 
   <body>
+    
+    <%# <%# add link_to here with conditional handling% if logged in what should they see> %>
+    <div class="navbar">
+      <nav>
+        <%= link_to "signup", signup_path%>
+        <%= link_to "login", login_path%>
+      </nav>
+    </div>
     <%= yield %>
+   <%# build class for navbar %> 
   </body>
+
+  
 </html>
