@@ -5,7 +5,7 @@ class User < ApplicationRecord
     has_many :reviews, dependent: :destroy
     has_many :reviewed_products, through: :reviews, source: :product
 
-    validates :username, :full_name, :age, :email, :password, :password_confirmation, :learning_goals, :location,  presence: true
+    validates :username, :first_name, :last_name, :age, :email, :password, :password_confirmation, :profile_picture, :user_type, presence: true
     validates :age, numericality: {greater_than_or_equal_to: 18}
     validates :username, length: { minimum: 3, maximum: 50 }
     validates :password_digest, length: { minimum: 8 }
